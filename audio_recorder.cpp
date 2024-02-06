@@ -19,7 +19,7 @@ void plotRecordedSamples() {
     }
 
     // Set GNUPlot settings and commands
-    fprintf(gnuplotPipe, "set title 'Recorded Sound'\n");
+    fprintf(gnuplotPipe, "set title 'Sampled Recorded Audio'\n");
     fprintf(gnuplotPipe, "set xlabel 'Sample Index'\n");
     fprintf(gnuplotPipe, "set ylabel 'Amplitude'\n");
     fprintf(gnuplotPipe, "plot 'recorded_samples.txt' with lines\n");
